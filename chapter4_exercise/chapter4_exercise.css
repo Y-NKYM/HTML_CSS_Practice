@@ -1,0 +1,55 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 横幅いっぱい、高さ120px、背景色red */
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: red;
+}
+
+/* 横幅いっぱい、高さ300px、背景色orange */
+.main-visual {
+  width: 100%;
+  height: 500px;
+  background-color: orange;
+}
+
+/* 横幅いっぱい、高さ1400px、背景色green */
+.main {
+  width: 960px; /*blogとsidebarのwidthの合計値*/
+  /*height: 1400px;*/
+  /*background-color: green;*/
+  display: flex; /*Flexboxの利用*/
+  justify-content: center; /*子要素の横並び・中央寄せ*/
+  margin: 0 auto; /*.main divの中央寄せ*/
+}
+
+.sidebar-left {
+  width: 230px;
+  height: 1400px;
+  background-color: palegreen;
+}
+
+.blog {
+  width: 500px;
+  height: 1400px;
+  background-color: limegreen;
+}
+
+.sidebar-right {
+  width: 230px;
+  height: 1400px;
+  background-color: palegreen;
+}
+
+/* 横幅いっぱい、高さ120px、背景色blue */
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
