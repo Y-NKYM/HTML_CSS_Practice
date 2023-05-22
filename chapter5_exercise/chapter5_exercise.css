@@ -58,7 +58,7 @@ nav {
 .box:nth-of-type(9) { background-color: #d9e5ff; }
 .box:nth-of-type(10) { background-color: #bad3ff; }
 .box:nth-of-type(11) { background-color: #a4c6ff; }
-.box:last-of-type { background-color: #8eb8ff;}
+.box:last-of-type { background-color: #8eb8ff; }
 
 /* 横幅いっぱい、高さ120px、背景色blue */
 footer {
