@@ -1,0 +1,74 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 90%;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header .heading {
+  font-size: 32px;
+}
+
+nav {
+  border-top: solid;
+  border-bottom: solid;
+}
+
+.nav-list {
+  text-align: center;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.main {
+  margin: 0 auto; /*.main divの中央寄せ*/
+  padding: 50px 0;
+  width: 800px;
+  display: flex; /*Flexboxの利用*/
+  justify-content: center; /*子要素の横並び・中央寄せ*/
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.box:first-of-type { background-color: #e6ffe9; }
+.box:nth-of-type(2) { background-color: #cbffd3; }
+.box:nth-of-type(3) { background-color: #aeffbd; }
+.box:nth-of-type(4) { background-color: #93ffab; }
+.box:nth-of-type(5) { background-color: #f3ffd8; }
+.box:nth-of-type(6) { background-color: #edffbe; }
+.box:nth-of-type(7) { background-color: #e9ffa5; }
+.box:nth-of-type(8) { background-color: #e4ff8d; }
+.box:nth-of-type(9) { background-color: #d9e5ff; }
+.box:nth-of-type(10) { background-color: #bad3ff; }
+.box:nth-of-type(11) { background-color: #a4c6ff; }
+.box:last-of-type { background-color: #8eb8ff;}
+
+/* 横幅いっぱい、高さ120px、背景色blue */
+footer {
+  width: 100%;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
+}
