@@ -10,12 +10,27 @@ a {
   text-decoration: none;
 }
 
-/* 横幅いっぱい、高さ120px、背景色red */
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 header {
   width: 90%;
   padding: 15px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+}
+
+.social i {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 header .heading {
@@ -34,7 +49,6 @@ header .heading {
   margin: 0 20px;
 }
 
-/* 横幅いっぱい、高さ300px、背景色orange */
 .main-visual {
   width: 100%;
   height: 300px;
@@ -60,16 +74,11 @@ header .heading {
   margin-top: 30px;
 }
 
-/* 横幅いっぱい、高さ1400px、背景色green */
 main {
   width: 880px;
-  /*blogとsidebarのwidthの合計値*/
   display: flex;
-  /*Flexboxの利用*/
   justify-content: center;
-  /*子要素の横並び・中央寄せ*/
   margin: 0 auto;
-  /*.main divの中央寄せ*/
   padding: 70px 0;
 }
 
