@@ -10,7 +10,11 @@ a {
   text-decoration: none;
 }
 
-header, nav, h2, .main-visual, footer {
+header,
+nav,
+h2,
+.main-visual,
+footer {
   font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 
@@ -75,7 +79,7 @@ header .heading {
 }
 
 main {
-  width: 880px;
+  width: 800px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -100,7 +104,7 @@ main {
 .blog-item {
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #acabab;
   display: flex;
   justify-content: flex-start;
 }
@@ -136,7 +140,7 @@ main {
   padding-top: 50px;
 }
 
-.pagination p{
+.pagination p {
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -152,7 +156,7 @@ main {
 }
 
 .common-heading {
-  border-bottom:8px solid #f7f7f7;
+  border-bottom: 8px solid #f7f7f7;
   text-align: center;
   line-height: 0.6;
 }
@@ -185,7 +189,7 @@ main {
   padding-top: 110px;
   background-size: cover;
   background-position: center;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 
 .instagram-box:nth-child(odd) {
@@ -226,4 +230,102 @@ footer {
 
 .footer-text {
   color: #fff;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 425px) {
+  header {
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .social {
+    position: static;
+  }
+
+  .social i {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+
+  .blog-box {
+    padding-top: 0px;
+  }
+
+  .blog-item {
+    padding: 40px 0 50px;
+    margin: 20px 0;
+    display: block;
+  }
+
+  .blog-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-text {
+    text-align: center;
+    padding: 15px 0 0;
+  }
+
+  .blog-text-heading {
+    padding-bottom: 15px;
+  }
+
+  .blog-data {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar-contents {
+    text-align: center;
+
+  }
+.instagram-box {
+  width: 110px;
+  padding-top: 110px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+  .instagram-box {
+    margin: 0;
+    width: 50%;
+    padding-top: 50%;
+
+  }
+
+  .instagram-box:nth-child(odd) {
+    margin: 0;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
+  }
 }
